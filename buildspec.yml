@@ -12,8 +12,8 @@ phases:
     commands:
       - aws s3 sync public/ s3://aws-static-site --acl public-read --delete
       # - aws cloudfront create-invalidation --distribution-id E3OT9U1GGEQDG1 --paths "/*"
-  artifacts: 
-    files:
-      - public/**/*
-    name: static-next-app-$(date +%Y-%m-%d)
+artifacts: 
+  files:
+    - public/**/*
+  name: static-next-app-$(date +%Y-%m-%d)
 
