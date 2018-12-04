@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - yarn
+  build:
+    commands:
+      - yarn export
+  post_build:
+    commands:
+      - aws s3 sync public/ s3://aws-static-site --acl public-read --delete
+      # - aws cloudfront create-invalidation --distribution-id E3OT9U1GGEQDG1 --paths "/*"
+

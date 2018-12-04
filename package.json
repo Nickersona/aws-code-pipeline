@@ -1,0 +1,24 @@
+{
+  "name": "zeit-deploy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Nickersona/zeit-deploy.git",
+  "author": "Nickersona <nickersondesign@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export -o public"
+  },
+  "dependencies": {
+    "contentful": "^7.0.5",
+    "dotenv": "^6.1.0",
+    "next": "^7.0.2",
+    "next-server": "^0.0.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {}
+}
