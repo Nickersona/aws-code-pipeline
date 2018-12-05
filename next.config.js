@@ -2,7 +2,6 @@ const dotenv = require('dotenv')
 dotenv.config()
 
 module.exports = (phase, { defaultConfig }) => {
-  console.log(process.env)
   return {
     publicRuntimeConfig: { // Will be available on both server and client
       staticFolder: '/static',
